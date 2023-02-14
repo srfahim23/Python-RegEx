@@ -282,4 +282,14 @@ about the search, and the result:
 .string return the string passed into the function
 .group() returns the part of the string where there was a match
 
+Example
 
+Print the position (start- and end-position) of the first match occurence.
+
+The regular expression looks for any words that starts with an upper case "S":
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search(r"\bS\w+", txt)
+    print(x.span())
