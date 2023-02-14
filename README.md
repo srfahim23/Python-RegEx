@@ -114,4 +114,37 @@ and has a special meaning:
 
     \Z              Returns a match if the specified                                    "Spain\Z"
                     charecters are at the end of the 
-                    string                
+                    string     
+                    
+
+
+# Sets
+A set is a set of charecters inside a pair of square brackets [] with a special meaning:
+
+    Set         Description
+
+    [arn]       Returns a match where one of the specified
+                charecters(a, r or n) is present
+
+    [a-n]       Returns a match for any lower case charecter,
+                alphabetically  between a and n
+
+    [^arn]      Returns a match for any charecter EXCEPT a, r, and n
+
+    [0123]      Returns a match where any of the specified digits 
+                (0, 1, 2, or 3) are present
+
+    [0-9]       Returns a match for any digit between 0 and 9
+
+    [0-5][0-9]  Returns a match for any two-digit numbers from
+                00 and 59
+
+    [a-zA-Z]    Returns a match for any charecter alphabetically 
+                between a and z, lower case OR upper case
+
+    [+]         In sets, +, *, ., |, (),$, {} has no special
+                meaning, so[+] means: return a match for any 
+                + charecter in the string
+
+
+# The findall() Function
