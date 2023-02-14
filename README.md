@@ -231,3 +231,30 @@ Split the string only at the first occurence:
     x = re.split("\s", txt, 1)
     print(x)
 
+
+# The sub() Function
+The sub() function replaces the matches with the text of your choice:
+
+Example
+
+Replace every white-space charecter with the number 9:
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.sub("\s", "9", txt)
+    print(x)
+
+You can control the number of replacments by specifying the ocunt 
+parametr:
+
+Example
+
+Replace the first 2 occurences:
+
+    import re 
+
+    txt = "The rain in Spain"
+    x = re.sub("\s", "9", txt, 2)
+    print(x)
+
