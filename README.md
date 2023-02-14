@@ -65,3 +65,53 @@ Metacharecters are charecters with a special meaning:
     |               Either or                                             "falls|stays"
 
     ()              Capture and Group                                                                                     
+
+
+# Special Sequences
+A special sequence is a / followed by one of the charecters in the list below, 
+and has a special meaning:
+
+    Charecter       Description                                                   Example 
+    \A              Returns a match if the specified                                "\AThe"
+                    charecters are at the beginning of 
+                    the string
+
+    \b              Returns a match where the                                       r"\bain"
+                    Specified charecters are at the                                 r"ain\b"
+                    beginning or at the end of a word
+                    (the "r" in the beginning is 
+                    making sure that the string is 
+                    being treated as a "raw string")   
+
+    \B              Returns a match where the 
+                    specified charecters are present,
+                    but NOT at the beginning(or at
+                    the end) of a word
+                    (the "r" in the beginning is 
+                    making sure that the string is 
+                    being treated as a "raw string")  
+
+    \d              Returns a match where the string                                 "\d"
+                    contains digit (numbers from 0-9)                                 
+
+    \D              Returns a match where the string                                 "\D"
+                    DOES NOT contain digit
+
+    \s              Returns a match where the string                                 "\s"
+                    contains a white  space charecter
+
+    \S              Returns a match where the string                                  "\S"
+                    DOES NOT contain a white  space charecter                           
+
+    \w              Returns a match where the string                                   "\w"
+                    contains any word charecters 
+                    (charecters from a to Z, digits
+                    from 0-9, and the underscore_charecter)                
+
+    \W              Returns a match where the string                                   "\W"
+                    DOES NOT contain any word
+                    charecters
+
+    \Z              Returns a match if the specified                                    "Spain\Z"
+                    charecters are at the end of the 
+                    string                
