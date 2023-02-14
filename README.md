@@ -293,3 +293,27 @@ The regular expression looks for any words that starts with an upper case "S":
     txt = "The rain in Spain"
     x = re.search(r"\bS\w+", txt)
     print(x.span())
+
+
+Example
+
+Print the string passed into the function
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search(r"\bS\w+", txt)
+    print(x.string)
+
+
+Example    
+
+Print the part of the string where there was a match.
+
+The regular expression looks for any words that starts with an upper case "S":
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search(r"\bS\w+", txt)
+    print(x.group())
