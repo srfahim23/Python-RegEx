@@ -258,3 +258,28 @@ Replace the first 2 occurences:
     x = re.sub("\s", "9", txt, 2)
     print(x)
 
+
+# Match Object
+A Match Object is an object containing information about the search and the result:
+
+Note: If there is no match, the value None will be returenced, instead of the 
+Match Object.
+
+Example:
+
+Do a search that will return a Match Object:
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search("ai", txt)
+    print(x) #this will print an object
+
+The Match object has properties and methods used to retrive information
+about the search, and the result:
+
+.span() returns a tuple containing the start-, and end positions of the match.
+.string return the string passed into the function
+.group() returns the part of the string where there was a match
+
+
