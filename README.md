@@ -191,5 +191,43 @@ Search for the first white-space charecter in the string:
 
     print("The first white-space charecter is located in position:",x.start())
 
-    
+
+If no matches are found, the value None is returned:
+
+Example:
+
+Make search that returns no match:
+
+    import re
+
+    txt = "The rain in  Spain"
+    x = re.search("Portugal", txt)
+    print(x)
+
+# The split() Function
+The split() function returns a list where the string has been split at each 
+match:
+
+Example:
+
+Split at each white-space charecter:
+
+    import re
+
+    txt = "The rain  in Spain"
+    x = re.split("\s", txt)
+    print(x)
+
+You can control the number of occurences by specifying the maxsplit
+parameter:
+
+Example:
+
+Split the string only at the first occurence:
+
+    import re
+
+    txt = "The rain in  Spain"
+    x = re.split("\s", txt, 1)
+    print(x)
 
