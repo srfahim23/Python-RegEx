@@ -163,5 +163,33 @@ Print a list of all matches:
 The list contains the matches in the order they are found.
 If no matches are found, and empty list is returned:
 
+Example:
 
+Return an empty lit if no match was found:
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.findall("Portugal", txt)
+    print(x)
+
+# The search() Function
+The search() function searches the string for a match, and returns a Match 
+object if there is a match.
+
+If there is moe than one match, only the first occurence of the match will be 
+returned:
+
+Example:
+
+Search for the first white-space charecter in the string:
+
+    import re
+
+    txt = "The rain in Spain"
+    x = re.search("\s", txt)
+
+    print("The first white-space charecter is located in position:",x.start())
+
+    
 
