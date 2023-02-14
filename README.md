@@ -37,4 +37,31 @@ The re module offers a set of functions that allows us to search a string for a 
     split           Returns a list where the string has been split at each match
     sub             Replaces one or many matches with a string
 
-    
+
+# Metacharecters 
+Metacharecters are charecters with a special meaning:
+
+    Charecter       Description                                      Example
+    []              A set of charecters                              "[a-m]"    
+
+    /               Signals a special sequence(can                     "\d"   
+                    also be used to escap special charecters)   
+
+    .               Any charecter (except newline                     "he..O"  
+                    charecter)   
+
+    ^               Starts with                                       "^hello"
+
+    $               Ends with                                          "planet$"
+
+    *               Zero or more occurences                             "he.*o"
+
+    +               One more occurences                                 "he.?o"
+
+    ?               Zero or one occurences                              "he.+o"
+
+    {}              Exactly the specified number of occurences           "he.{2}o"
+
+    |               Either or                                             "falls|stays"
+
+    ()              Capture and Group                                                                                     
